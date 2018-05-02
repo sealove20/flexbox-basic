@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>FlexBox Tutorial</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="build/style.css">
+   </head>
+   <body>
+
+      <div class="wrapper">
+
+         <header class="top">
+            <h1><a href="#">What The Flexblox?!</a></h1>
+         </header>
+
+         <nav class="flex-nav">
+            <a href="#" class="toggleNav">☰ Menu</a>
+            <ul>
+               <li><a href='#'>Item 01</a></li>
+               <li><a href='#'>Item 02</a></li>
+               <li><a href='#'>Item 03</a></li>
+               <li><a href='#'>Item 04</a></li>
+               <li><a href='#'>Item 05</a></li>
+               <li><a href='#'>Item 06</a></li>
+               <li class="social">
+                  <a href='https://twitter.com'><i class="fab fa-twitter"></i></a>
+               </li>
+               <li class="social">
+                  <a href='https://facebook.com'><i class="fab fa-facebook-f"></i></a>
+               </li>
+               <li class="social">
+                  <a href='https://github.com'><i class="fab fa-github"></i></a>
+               </li>
+               <li class="social">
+                  <a href='https://instagram.com'><i class="fab fa-instagram"></i></a>
+               </li>
+            </ul>
+         </nav>
+
+         <section class="hero">
+            <img src="http://lorempixel.com/1000/600/abstract">
+         </section>
+
+         <section class="details">
+            <p>A simple video course to help you master FlexBox.</p>
+            <p>Sign up todayto grab all the videos and exercises!</p>
+         </section>
+
+         <section class="signup">
+            <form action="" class="signup">
+               <input type="text" placeholder="Your Name">
+               <input type="email" placeholder="Email Address">
+               <input type="submit" placeholder="Sign me up!">
+            </form>
+         </section>
+
+         <footer>
+            <p>&copy; Matheus Henrique</p>
+         </footer>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+      <script>
+         $(function () {
+            $('.toggleNav').on('click', function() {
+               $('.flex-nav ul').toggleClass('open');
+            });
+         });
+
+      </script>
+   </body>
+</html>
